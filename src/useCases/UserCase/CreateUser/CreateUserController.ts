@@ -10,7 +10,7 @@ export class CreateUserController {
       if (!name || !email || !password)
         return res.status(400).json({ error: "Arguments are missing." });
 
-      const user = await this.createUser.execute({ name, email, password });
+      const user = await this.createUser.execute({ name, email: email.toLowerCase(), password });
 
       return res.status(201).json({ user });
     } catch (error) {

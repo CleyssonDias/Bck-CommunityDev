@@ -1,5 +1,5 @@
-import { UserRepository } from "./UserRepository";
+import { UserRopsitory } from "./UserRepository";
 
-const userRepository = new UserRepository()
+const userRopsitory = new UserRopsitory()
 
-export { userRepository }
+export { userRopsitory }

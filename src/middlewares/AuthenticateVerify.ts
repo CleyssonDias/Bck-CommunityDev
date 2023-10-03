@@ -9,7 +9,7 @@ export function AuthenticateVerify(req: Request, res: Response, next:NextFunctio
     const [,token] = auth.split(" ")
 
     try {
-        const { sub } = verify(token, 'LOLI');
+        const { sub } = verify(token, '44321623819');
 
         req.body.userID = sub
         

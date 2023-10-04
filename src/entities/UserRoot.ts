@@ -1,7 +1,6 @@
-export class User {
+export class UserRoot {
     constructor(
-        public id: number,
-        public name: string,
+        public nome: string,
         public email: string,
         public password: string
     ) {}

@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { CreateUser } from "./CreateUser";
+import { CreateUserRoot } from "./CreateUserRoot";
 
-export class CreateUserController {
-  constructor(private createUser: CreateUser) {}
+export class CreateUserRootController {
+  constructor(private createUserRoot: CreateUserRoot) {}
 
   async handle(req: Request, res: Response) {
     const { name, email, password } = req.body;
@@ -10,7 +10,7 @@ export class CreateUserController {
       if (!name || !email || !password)
         return res.status(400).json({ error: "Arguments are missing." });
 
-      const user = await this.createUser.execute({ name, email: email.toLowerCase(), password });
+      const user = await this.createUserRoot.execute({ name, email: email.toLowerCase(), password });
 
       return res.status(201).json({ user });
     } catch (error) {

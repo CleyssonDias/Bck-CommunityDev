@@ -1,5 +1,5 @@
-import { UserRopsitory } from "../../useCases/UserRepository";
+import { Repository } from "./Repository";
 
-const userRopsitory = new UserRopsitory()
+const repository = new Repository()
 
-export { userRopsitory }
+export { repository }

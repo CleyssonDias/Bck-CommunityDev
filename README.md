@@ -11,10 +11,12 @@
     "password":"123"
 }
 ```
+- **ROTA PARA CRIAÇÃO DE USUARIO PROPRIETARIO**
+  
+*ROTA:* **/user/owner | POST**
 ```json
 // EXEMPLO ROTA DE CRIAÇÃO DE USUARIO PROPRIETARIO
   {
-    "propretyId": 1,
     "email": "abse2",
     "password": "asea2sae",
     "name": "abc",

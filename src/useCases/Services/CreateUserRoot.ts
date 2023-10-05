@@ -1,5 +1,5 @@
-import { UserRoot } from "../../../entities/UserRoot";
-import { IRepository } from "../../../repositories/UserRepo/IRepository";
+import { UserRoot } from "../../entities/UserRoot";
+import { IRepository } from "../../repositories/UserRepo/IRepository";
 import { ICreateUserRootDTO } from "../IDTOs/ICreateUserRootDTO";
 
 export class CreateUserRoot {

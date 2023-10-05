@@ -1,7 +1,5 @@
 export class UserOwner {
     constructor(
-        public id: number,
-        public propretyId : number,
         public email: string,
         public password: string,
         public name: string,
@@ -9,7 +7,7 @@ export class UserOwner {
         public ownerNumber: number,
         public maritialState: string,
         public phoneNumber: number,
-        public CPF: number,
-        public ownerPicture : File
+        public CPF: string,
+        public ownerPicture : string | null
     ) {}
 }

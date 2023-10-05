@@ -1,6 +1,6 @@
 import { UserRoot } from "../../../entities/UserRoot";
 import { IRepository } from "../../../repositories/UserRepo/IRepository";
-import { ICreateUserRootDTO } from "./ICreateUserRootDTO";
+import { ICreateUserRootDTO } from "../IDTOs/ICreateUserRootDTO";
 
 export class CreateUserRoot {
   constructor(
@@ -9,7 +9,7 @@ export class CreateUserRoot {
 
   async execute(data: ICreateUserRootDTO) {
     const userAlereadyExists = await this.repository.checkEmail(data.email)
-    if (userAlereadyExists) return { error: 'Email already registered by another user.' }
+    if (userAlereadyExists) throw { code: 409, message: 'Email already registered by another user.' }
 
     const user = new UserRoot(data.name,
       data.email,

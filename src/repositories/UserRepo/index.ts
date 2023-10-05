@@ -1,5 +1,5 @@
-import { Repository } from "./Repository";
+import { UserRepository } from "./UserRepository";
 
-const repository = new Repository()
+const userRepository = new UserRepository()
 
-export { repository }
+export { userRepository }

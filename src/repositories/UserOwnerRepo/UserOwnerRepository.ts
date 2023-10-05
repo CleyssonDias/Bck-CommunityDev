@@ -3,8 +3,8 @@ import { UserOwner } from "../../entities/UserOwner";
 import { IUserOwnerRepository } from "./IUserOwnerRepository";
 
 export  class UserOwnerRepository implements IUserOwnerRepository {
-  
-    private db = new PrismaClient;
+    private db = new PrismaClient();
+
     async save(user: UserOwner): Promise<UserOwner> {
 
         const res = await this.db.userOwner.create({

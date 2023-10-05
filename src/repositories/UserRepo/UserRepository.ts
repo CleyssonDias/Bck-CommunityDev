@@ -1,7 +1,7 @@
 import { UserRoot } from "../../entities/UserRoot";
-import { IRepository } from "./IRepository";
+import { IUserRepository } from "./IUserRepository";
 import { PrismaClient } from "@prisma/client";
-export class Repository implements IRepository {
+export class UserRepository implements IUserRepository {
 
     private Banco = new PrismaClient();
 

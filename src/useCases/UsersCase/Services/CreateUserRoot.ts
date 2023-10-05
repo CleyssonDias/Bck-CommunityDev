@@ -9,7 +9,7 @@ export class CreateUserRoot {
 
   async execute(data: ICreateUserRootDTO) {
     const userAlereadyExists = await this.repository.checkEmail(data.email)
-    if (userAlereadyExists) throw { code: 409 ,message: 'Email already registered by another user.' }
+    if (userAlereadyExists) throw { code: 409, message: 'Email already registered by another user.' }
 
     const user = new UserRoot(data.name,
       data.email,

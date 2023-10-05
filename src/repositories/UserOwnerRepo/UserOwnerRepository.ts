@@ -9,7 +9,6 @@ export  class UserOwnerRepository implements IUserOwnerRepository {
 
         const res = await this.db.userOwner.create({
             data: {
-                propretyId: user.propretyId,
                 email: user.email,
                 password: user.password,
                 name: user.name,

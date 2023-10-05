@@ -1,10 +1,10 @@
 import { UserRoot } from "../../entities/UserRoot";
-import { IRepository } from "../../repositories/UserRepo/IRepository";
+import { IUserRepository } from "../../repositories/UserRepo/IUserRepository";
 import { ICreateUserRootDTO } from "../IDTOs/ICreateUserRootDTO";
 
 export class CreateUserRoot {
   constructor(
-    public repository: IRepository
+    public repository: IUserRepository
   ) { }
 
   async execute(data: ICreateUserRootDTO) {

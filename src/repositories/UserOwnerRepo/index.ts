@@ -1,3 +1,5 @@
 import { UserOwnerRepository } from "./UserOwnerRepository";
 
-export const userOwnerRepository = new UserOwnerRepository();
+const userOwnerRepository = new UserOwnerRepository();
+
+export {userOwnerRepository}

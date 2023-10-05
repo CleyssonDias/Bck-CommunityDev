@@ -1,4 +1,4 @@
-export interface UserOwnerDTO{
+export interface ICreateUserOwnerDTO {
     email: string,
     password: string,
     name: string,

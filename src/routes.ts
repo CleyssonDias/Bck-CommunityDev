@@ -3,7 +3,7 @@ import { Response, Request, Router } from "express";
 
 // * Importando rotas e autenticação
 import { AuthenticateVerify } from "./middlewares/AuthenticateVerify";
-import { createUserRootController } from "./useCases/UsersCase/CreateUserRoot";
+import { createUserRootController } from "./useCases/UsersCase/Indexs/CreateUserRoot";
 
 
 const router = Router(); // variavel com as rotas

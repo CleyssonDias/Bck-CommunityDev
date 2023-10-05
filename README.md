@@ -16,7 +16,7 @@
 *ROTA:* **/user/owner | POST**
 ```json
 // EXEMPLO ROTA DE CRIAÇÃO DE USUARIO PROPRIETARIO
-  {
+{
     "email": "abse2",
     "password": "asea2sae",
     "name": "abc",

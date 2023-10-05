@@ -11,3 +11,18 @@
     "password":"123"
 }
 ```
+```json
+// EXEMPLO ROTA DE CRIAÇÃO DE USUARIO PROPRIETARIO
+  {
+    "propretyId": 1,
+    "email": "abse2",
+    "password": "asea2sae",
+    "name": "abc",
+    "birthDay": 20092001,
+    "ownerNumber": 9220312,
+    "maritialState": "casado",
+    "phoneNumber": 123412,
+    "CPF": "12354",
+    "ownerPicture": "aaaaaaaaaaaaaaaa"
+}
+```

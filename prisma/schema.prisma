@@ -15,14 +15,27 @@ model Root {
 }
 
 model UserOwner {
-  id            Int    @id @default(autoincrement())
-  email         String @unique
-  password      String
-  name          String
-  birthDay      Int
-  ownerNumber   Int
-  maritialState String
-  phoneNumber   Int
-  CPF           String @unique
-  ownerPicture  String
+  id              Int               @id @default(autoincrement())
+  email           String            @unique
+  password        String
+  name            String
+  birthDay        Int
+  ownerNumber     Int
+  maritialState   String
+  phoneNumber     Int
+  CPF             String            @unique
+  ownerPicture    String
+  propertyOfOwner PropertyOfOwner[]
+}
+
+model PropertyOfOwner {
+  id              Int       @id @default(autoincrement())
+  id_of_UserOwner Int
+  cnpj            String    @unique
+  crf             String    @unique
+  state           String
+  county          String
+  address         String
+  coordinates     String
+  UserOwner       UserOwner @relation(fields: [id_of_UserOwner], references: [id])
 }
